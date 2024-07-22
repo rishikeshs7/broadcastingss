@@ -1,0 +1,230 @@
+
+.upload, .next, button.add-call, button.add-website {
+    height: 36px; 
+    width: 120px; 
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 0.875rem;
+}
+
+.upload:hover, .next:hover, button.add-call:hover, button.add-website:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); 
+}
+
+
+button.add-call {
+    margin-top: 10px; 
+    margin-right: 10px;
+}
+
+button.add-website {
+   margin-top: 10px; 
+   margin-right: 10px;
+
+}
+
+.headermedia {
+    width: 90%;
+    max-width: 590px;
+    height: auto;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px 0 0 0;
+    background: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    opacity: 1;
+}
+
+
+.text-input-row {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.text-input-row input {
+    padding: 15px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.2rem; 
+    width: calc(100% - 60px);
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+.text-input-row input:focus {
+    border-color: #007BFF; 
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+
+.small-box {
+    background-color: #f0f0f0;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    font-size: 1rem; 
+    width: 48px; 
+    height: 48px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.variables {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px; 
+}
+
+
+.var {
+    font-weight: bold;
+}
+
+
+h1, h2 {
+    font-size: 1.25rem; 
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h2 {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .headermedia {
+        padding: 15px;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .upload, .next, button.add-call, button.add-website {
+        width: 100px; 
+        font-size: 0.75rem; 
+    }
+
+    .text-input-row input {
+        padding: 12px;
+        font-size: 1rem; 
+    }
+
+    .small-box {
+        font-size: 0.9rem;
+        padding: 10px;
+        width: 40px;
+        height: 90px;
+    }
+}
+
+
+.error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 10px;
+}
+
+.prompt {
+    color: green;
+    font-size: 0.875rem;
+    margin-top: 10px;
+}
+
+.headermedia p {
+    margin-top: 10px;
+}
+
+
+.next-button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.advanced-feature input {
+    font-size: 1rem; 
+}
+
+.advanced-features-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+
+.advanced-feature-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.advanced-feature input {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.125rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    background-color: #f9f9f9; 
+}
+
+
+.advanced-feature input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+    outline: none;
+    transform: scale(1.02);
+}
+
+
+.advanced-feature button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.125rem;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+
+.advanced-feature button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 768px) {
+    .advanced-feature input {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .advanced-feature button {
+        font-size: 0.875rem;
+        padding: 10px 15px;
+    }
+}
